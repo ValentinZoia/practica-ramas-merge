@@ -11,4 +11,8 @@ function agregarALaPantalla(value) {
   function limpiarPantalla() {
     document.getElementById('pantalla').value = '';
   }
-  
+
+  function borrarUltimoDigito(){
+    const valorPantalla = document.getElementById('pantalla').value;
+    document.getElementById('pantalla').value = valorPantalla.slice(0,-1)
+  }
